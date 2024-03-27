@@ -7,14 +7,27 @@
 </head>
 <body>
   <script>
-  const a = {
-    firstname: 'heritier',
-    lastname: 'kamboya',
-    fullname: function () {
-      console.log(`${this.firstname} ${this.lastname}`)
+ // on va créé un nombre aleatoire
+ function getRandomInt(max) {
+    return Math.floor(Math.random() * (max + 1))
+ }
+ const solution = getRandomInt(10)
+  function isRight(n){
+    return solution === n
+  }
+  function guess() {
+     const number = prompt('Entrer un chiffre') * 1
+     return isRight(number)
+
+  }
+  for (i = 0; i < 3; i++) {
+    if(guess) {
+      console.log('Bravo')
+      break;
+    }else if (i === 2) {
+      console.log('vous avez perdu')
     }
   }
-  a.fullname();
   </script>
 </body>
 </html>
