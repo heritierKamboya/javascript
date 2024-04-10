@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="./app.js"  type="module"  ></script>
 </head>
 <body>
-  <ul>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque vitae fuga eveniet et facilis libero? Excepturi animi molestiae eius repellat tempore, nesciunt amet veniam veritatis odio, quibusdam iusto porro.</li>
-    <li>Obcaecati consectetur beatae maxime voluptates voluptatum, accusamus eius quos, similique non corrupti natus quam sit, molestiae dolore quae voluptas totam! Id ipsam alias nam non, molestiae consequuntur mollitia inventore quidem!</li>
-    <li>In numquam, non quia fugit nisi commodi voluptates temporibus cupiditate itaque earum tenetur tempore quisquam totam culpa dignissimos voluptatem facere voluptatum molestias dolorum architecto recusandae ex ipsa! Iste, rem vel.</li>
-  </ul>
+ <script>
+let i = 0 
+const t = setInterval(()=>{
+  i++
+  console.log('bonjour')
+  if(i >= 5){
+    clearInterval(t)
+  }
+}, 1000)
+
+ </script>
 </body>
 </html>
 
